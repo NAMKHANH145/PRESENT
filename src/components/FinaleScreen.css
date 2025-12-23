@@ -1,0 +1,158 @@
+.finale-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #fffdd0, #ffc0cb, #ffb6c1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 6000;
+  overflow: hidden;
+}
+
+.finale-container {
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(255, 105, 180, 0.4);
+  backdrop-filter: blur(10px);
+  border: 4px solid #ff69b4;
+  max-width: 90%;
+  width: 700px; /* Increased width */
+  position: relative;
+}
+
+.finale-container h1 {
+  color: #ff69b4;
+  font-size: 2.8rem; /* Increased font size */
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.typewriter-container {
+  margin: 30px 0;
+  min-height: 100px;
+}
+
+.typewriter-container p {
+  color: #ff69b4;
+  font-size: 1.5rem; /* Increased font size */
+  line-height: 1.6;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.gift-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.gift-button {
+  font-size: 2.2rem; /* Larger font size */
+  padding: 30px 60px; /* Increased padding */
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.5);
+  min-width: 400px; /* Larger minimum width */
+  font-family: 'Quicksand', sans-serif; /* Consistent font instead of Dancing Script */
+}
+
+.gift-button:hover {
+  background-color: #ff59a4;
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 105, 180, 0.6);
+}
+
+.arrow-indicator {
+  margin-bottom: 20px; /* Changed from margin-top to margin-bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: bounce 1s infinite;
+}
+
+.arrow {
+  font-size: 2.5rem;
+  color: #ff69b4;
+  margin-bottom: 5px;
+}
+
+.arrow-indicator p {
+  color: #ff69b4;
+  font-size: 1rem; /* Smaller font size for "click here" */
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+}
+
+.click-here-text {
+  color: #ff69b4;
+  font-size: 1rem; /* Even smaller font size for "click here" */
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.gift-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.gift-container h2 {
+  color: #ff69b4;
+  font-size: 2.2rem; /* Increased font size */
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.gift-container p {
+  color: #ff69b4;
+  font-size: 1.4rem; /* Increased font size */
+  line-height: 1.6;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 10px;
+}
+
+.qr-code-placeholder {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  background: linear-gradient(45deg, #ffc0cb, #ffb6c1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ff69b4;
+}
+
+.qr-placeholder-content {
+  text-align: center;
+}
+
+.heart-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Animation for the finale screen */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.finale-container {
+  animation: float 4s ease-in-out infinite;
+}
