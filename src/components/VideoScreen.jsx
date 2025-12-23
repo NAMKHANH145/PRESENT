@@ -27,28 +27,22 @@ const VideoScreen = ({ onVideoEnd }) => {
   return (
     <div className="video-screen">
       <div className="video-container">
-          <video
-            className="video-player"
-            controls
-            autoPlay
-            src="Video/7358446670684.mp4" // Using video from the Video folder with correct name
+        <video
+          className="video-player"
+          src="Video/7358446670684.mp4"
           controls={showControls}
+          autoPlay
+          playsInline
+          webkit-playsinline="true"
+          disablePictureInPicture
           onEnded={handleVideoEnd}
           onPlay={() => {
             setIsPlaying(true);
             setShowControls(true);
           }}
-          onDoubleClick={() => setShowControls(!showControls)} // Allow double click to toggle controls
-          onClick={() => setShowControls(!showControls)} // Click to toggle controls
-          autoPlay
-          playsInline
-          disablePictureInPicture
-          webkit-playsinline="true"
-          preload="metadata"
+          onClick={() => setShowControls(!showControls)}
           onError={(e) => {
             console.error('Video error:', e.target.error);
-            // Fallback to a different video or handle error
-            // Try to load a fallback video if the main one fails
           }}
         >
           Your browser does not support the video tag.
