@@ -2,11 +2,14 @@
   "name": "untitled4",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://NAMKHANH145.github.io/PRESENT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +24,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.2",
+    "gh-pages": "^6.3.0",
     "vite": "^7.3.0"
   }
 }
