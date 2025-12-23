@@ -8,10 +8,10 @@ const TimelineScreen = ({ onComplete }) => {
 
   // Use specific images from the Picture folder with direct paths
   const timelineImages = [
-    '/Picture/z7357248195324_5a5084f2357ffd290d062631a00ec6d3.jpg',
-    '/Picture/z7357377222270_d86485c8e9e1122090877c03d70a18f8.jpg',
-    '/Picture/z7357377387399_a049338a93cf6863fc80d79166e7ebe3.jpg',
-    '/Picture/z7357377215059_38d92c865df55e659d6e0251a8182ec4.jpg'
+    'Picture/z7357248195324_5a5084f2357ffd290d062631a00ec6d3.jpg',
+    'Picture/z7357377222270_d86485c8e9e1122090877c03d70a18f8.jpg',
+    'Picture/z7357377387399_a049338a93cf6863fc80d79166e7ebe3.jpg',
+    'Picture/z7357377215059_38d92c865df55e659d6e0251a8182ec4.jpg'
   ];
 
   // Timeline data

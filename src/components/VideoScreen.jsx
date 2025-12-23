@@ -27,9 +27,11 @@ const VideoScreen = ({ onVideoEnd }) => {
   return (
     <div className="video-screen">
       <div className="video-container">
-        <video
-          className="video-element"
-          src="/Video/7358446670684.mp4" // Using video from the Video folder with correct name
+          <video
+            className="video-player"
+            controls
+            autoPlay
+            src="Video/7358446670684.mp4" // Using video from the Video folder with correct name
           controls={showControls}
           onEnded={handleVideoEnd}
           onPlay={() => {

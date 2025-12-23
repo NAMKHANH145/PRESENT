@@ -56,7 +56,7 @@ export const getPictureFolderImages = () => {
 // Used by MusicPlayer component to load available music files
 export const getMusicFiles = () => {
   return [
-    '/Music/IU (아이유) - Blueming (Color Coded Lyrics Eng_Rom_Han_가사) - Jaeguchi.mp3' // Direct path to music file
+    'Music/IU (아이유) - Blueming (Color Coded Lyrics Eng_Rom_Han_가사) - Jaeguchi.mp3' // Direct path to music file
   ];
 };
 
